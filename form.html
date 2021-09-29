@@ -1,0 +1,26 @@
+<div id="down">
+		<h3>Provide Input Data :&nbsp;</h3>
+		<form id="stats" method="post" action="/calculate">
+			<h4>Number of Shots(S): <input type="number" name="S" /><br/></h4
+>
+			<h4>Reporting Rate(Q): <input type="number" name="Q"/><br/></h4>
+
+			<h4>Number of Matching Digits(D): <input type="number" name="D"/><br/></h4>
+
+			<h4>Number of Resources(R): <input type="number" name="R"/><br/></h4>
+
+			<h4><input type="submit" name="draw" value="Draw Chart" 
+/>
+			<input type="submit" name='cancel' value="Cancel"
+			onclick="window.location='/'; return false;" /><br/></h4
+>
+		</form>
+</div>
+</div>
+		
+		{% if note %}
+			{{ note }}
+		{% endif %}
+	
+</div>
+

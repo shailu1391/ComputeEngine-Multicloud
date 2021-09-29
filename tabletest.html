@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">  
+		<link rel="stylesheet" href="style.css">
+		</head>
+<body style="background-color: cyan;">
+		<h1>Pi Estimation</h1>
+		<h4 style="color:blue">Click here for <a href="piplot.html" target="_blank">Pi Estimation Plot</a></h3>
+			<div>
+				<h3>Final Pi estimate</h3>
+					{{finalval}}
+			</div>
+</body>
+
+<body>
+	<div> 
+		<h3>Run Information</h3>
+		{% for table in tables %}
+				{{ table|safe }}
+		{% endfor %} 
+	</div>
+</body>
+<body>
+		<h2>Elapsed time (seconds)</h2>
+		{{content}}
+</body>
+<body>
+		<h2>Cost of Analysis per Single Request(USD)</h2>
+		{{cost}}
+		<hr>
+		<div>
+			<button style="margin:5px;" onclick="window.close()">Terminate</button> 
+		</div>
+		<div>
+			<h3>History <a href="output.html">Database</a>.</h3>
+			<h3>Return to Home Page <a href="home.html">Home</a></h3>
+		</div>
+		<hr>
+		<h4><a href="https://aws.amazon.com/lambda/pricing/" target="_blank">AWS Lambda Pricing for US East(N.Virginia)</a></h4>
+</body>
+
+
+</html>
